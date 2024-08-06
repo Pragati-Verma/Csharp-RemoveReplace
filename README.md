@@ -3,7 +3,7 @@ A challenge to extract, replace, and remove data from an input string
 
 Given string:
 ----------------------------
-const string input = "<div><h2>Widgets \&trade;</h2><span>5000</span></div>";
+const string input = "<div>\<h2>Widgets \&trade;\</h2><span>5000</span></div>";
 
 Rule
 ----------------------------
@@ -13,4 +13,4 @@ Rule
 Expected output:
 ----------------------------
 Quantity: 5000
-Output: <h2>Widgets \&reg;</h2><span>5000</span>
+Output: \<h2>Widgets \&reg;\</h2><span>5000</span>
